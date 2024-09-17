@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitness Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://seekvectorlogo.net/wp-content/uploads/2019/07/fit-for-life-vector-logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Programs</a></li>
+                <li><a href="training.html">Workouts</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="contact.html">Get in Touch</a></li>
+                <li><a href="#bmr-calculator">BMR Calculator</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero" id="home">
+            <div class="hero-text">
+                <h1><span class="fit">Fit.</span> <span class="fast">Fast.</span> <span class="forever">Forever.</span></h1>
+                <li><a href="training.html" <button class="cta-btn">Train with us →</button> </a> </li>
+            </div>
+
+            <!-- Left and Right Buttons for Manual Control -->
+            <button id="prev" class="control-btn">‹</button>
+            <button id="next" class="control-btn">›</button>
+
+            <!-- Dots for image slides -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Training Section -->
+    <section id="training" class="section">
+        <div class="section-content">
+            <h2>Training Programs</h2>
+            <p>Discover a variety of training programs tailored to your fitness goals. From beginner workouts to advanced strength training, we offer programs that suit every level.</p>
+            <div class="training-wrapper">
+                <div class="training-program">
+                    <img src="https://www.verywellfit.com/thmb/wfnguhCstO5GjNzsRHizh4RJ4HY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-455244937-598090e8b2144344af56ba5f836e9072.jpg" alt="Strength Training" style="width: 200px; height: auto;">
+                    <li><a href="strength.html"><h3>Strength Training</h3></a></li>
+                    <p>Build muscle, increase endurance, and improve overall strength with our guided strength training programs. Suitable for all levels.</p>
+                </div>
+                <div class="training-program">
+                    <img src="https://images.dickssportinggoods.com/marketing/DSG_FIT_7993947_CLP_WeightsJulyUpdate_0719_S1.jpg" style="width: 200px; height: auto;">
+                    <li><a href="hiit.html"><h3>High-Intensity Interval Training (HIIT)</h3></a></li>
+                    <p>Burn fat and boost your metabolism with our intense interval-based workout sessions. Short bursts of high-energy exercises followed by rest periods for maximum calorie burn.</p>
+                </div>
+                <div class="training-program">
+                    <img src="https://images.shiksha.com/mediadata/images/articles/1691666535phpnkj6Tl.jpeg" alt="Yoga and Pilates" style="width: 200px; height: auto;">
+                    <li><a href="yoga.html"><h3>Yoga & Pilates</h3></a></li>
+                    <p>Improve flexibility, balance, and mind-body connection with our calming and restorative Yoga and Pilates classes. Perfect for unwinding and strengthening your core.</p>
+                </div>
+                <div class="training-program">
+                    <img src="https://media.istockphoto.com/id/1132086660/photo/side-view-of-beautiful-muscular-woman-running-on-treadmill.jpg?s=612x612&w=0&k=20&c=5Vq_BJjG7sbIyKIP-Adu0pChReDXm0dC7BVPvto2M0I=" alt="Cardio" style="width: 200px; height: auto;">
+                    <li><a href="cardio.html"><h3>Cardio Workouts</h3></a></li>
+                    <p>Get your heart pumping with our cardiovascular-focused training. From running to cycling, our cardio programs are designed to improve stamina and cardiovascular health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Brands Section -->
+    <section id="brands" class="section">
+        <div class="section-content">
+            <h2>Brands We Trust</h2>
+            <p>We collaborate with the top brands in the fitness industry to ensure our members have access to high-quality equipment and apparel. Here are some of the brands we work with:</p>
+            <div class="brands-wrapper">
+                <div class="brand">
+                    <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/16273936/2023/12/13/99e87439-dc1c-44cd-a507-620c1f8084011702451316639NikeMenBlackRevolution6NNRunningShoes2.jpg" alt="Nike" style="width: 300px; height: auto;">
+                    <h3>Nike</h3>
+                    <p>Nike provides us with innovative sportswear and gear that powers both athletes and beginners. Their range of training shoes and apparel ensures optimal performance.</p>
+                </div>
+                <div class="brand">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLq21M-TD0GW5F3uFWnz7lfeUlhjoYJPdq_A&s" alt="Adidas" style="width: 300px; height: auto;">
+                    <h3>Adidas</h3>
+                    <p>Adidas is a key partner, supplying us with durable, high-quality fitness apparel and accessories designed to maximize workout efficiency and comfort.</p>
+                </div>
+                <div class="brand">
+                    <img src="https://www.pymnts.com/wp-content/uploads/2016/09/Under-Armor-New-President.jpg" alt="Under Armour" style="width: 300px; height: auto;">
+                    <h3>Under Armour</h3>
+                    <p>Under Armour is known for their cutting-edge technology and performance-enhancing wear. We trust them for our fitness equipment and workout clothing needs.</p>
+                </div>
+                <div class="brand">
+                    <img src="https://assets.roguefitness.com/f_auto,q_auto,c_fill,g_center,w_1042,h_924,b_rgb:f8f8f8/homepage/Holiday%202023/Gift%20Guide%202023/echo-bike_vl3urp.png" alt="Rogue Fitness" style="width: 300px; height: auto;">
+                    <h3>Rogue Fitness</h3>
+                    <p>Rogue Fitness supplies us with professional-grade training equipment, including barbells, kettlebells, and functional fitness tools that help our members achieve peak performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-content">
+            <h2>About Us</h2>
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <p>At <strong>[Fitness Website]</strong>, our mission is to empower individuals to reach their full potential through health and fitness. We believe in a personalized approach, ensuring that each member receives the guidance, motivation, and tools necessary to succeed.</p>
+                    <h3>Our Vision</h3>
+                    <p>We envision a community where everyone has access to high-quality fitness training, no matter their experience level. We believe fitness should be inclusive, enjoyable, and a lifelong commitment.</p>
+                    <h3>Meet Our Trainers</h3>
+                    <p>Our team of certified trainers are experts in various fitness disciplines, from strength training to high-intensity interval workouts (HIIT). They are passionate about helping you achieve your goals and will work with you every step of the way.</p>
+                    <ul class="trainer-list">
+                        <li><strong>John Doe</strong> - Strength Training Specialist</li>
+                        <li><strong>Jane Smith</strong> - HIIT and Cardio Expert</li>
+                        <li><strong>Michael Johnson</strong> - Nutrition and Fitness Coach</li>
+                        <li><strong>Sara Williams</strong> - Yoga and Mindfulness Trainer</li>
+                    </ul>
+                    <h3>Our Facilities</h3>
+                    <p>With state-of-the-art equipment, group classes, and personal training sessions, we have everything you need for a comprehensive fitness experience. Our gym is open 24/7, offering flexible hours that suit your busy lifestyle.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20151215195453-business-leader-group-front-leadership-team-professionals-businesspeople.jpeg?format=pjeg&auto=webp&crop=1:1" alt="Fitness Facility">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Policies Section -->
+    <section id="policies" class="section">
+        <div class="section-content">
+            <h2>Our Policies</h2>
+            <p>We prioritize transparency and the satisfaction of our members. Below are some key policies you should be aware of when using our services:</p>
+            <div class="policies-wrapper">
+                <div class="policy">
+                    <h3>Membership Policy</h3>
+                    <p>Our memberships offer flexibility and access to all our facilities. Monthly and annual plans are available with the option to pause or cancel at any time with prior notice.</p>
+                </div>
+                <div class="policy">
+                    <h3>Privacy Policy</h3>
+                    <p>Your privacy is important to us. We ensure that your personal information is protected and only used for purposes directly related to your membership and training sessions.</p>
+                </div>
+                <div class="policy">
+                    <h3>Refund Policy</h3>
+                    <p>If you are not satisfied with our services, refunds for unused sessions or memberships can be processed within 30 days of purchase. Please contact us for more details.</p>
+                </div>
+                <div class="policy">
+                    <h3>Terms & Conditions</h3>
+                    <p>By using our services, you agree to comply with our gym rules, policies, and safety guidelines. Any breach of these terms may result in suspension or cancellation of your membership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Get in Touch Section -->
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or would like to schedule a consultation, feel free to reach out to us using the form below or through our social media channels.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> contact@fitnesswebsite.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <h3>Visit Us</h3>
+                    <p>123 Fitness Street, City, Country</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345099977!2d144.9630573158905!3d-37.81621827975133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sFitness%20Center!5e0!3m2!1sen!2sus!4v1620568455431!5m2!1sen!2sus" 
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i>
+                        <a href="#"><i class="fa-brands fa-instagram"></i>
+                        <a href="#"><i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BMR Calculator Section -->
+<section id="bmr-calculator" class="section">
+    <div class="section-content">
+        <h2>BMR Calculator</h2>
+        <p>Calculate your Basal Metabolic Rate (BMR) and find out the best exercises based on your BMR.</p>
+        <div class="bmr-wrapper">
+            <form id="bmrForm">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+                
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                
+                <button type="button" onclick="calculateBMR()">Calculate BMR</button>
+            </form>
+            
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+</section>
+
+    <!-- Linking the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

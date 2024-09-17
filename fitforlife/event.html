@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitness Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/60/a9/61/60a96199afa8469b7c3c46810ed86816.jpg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Programs</a></li>
+                <li><a href="training.html">Workouts</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="contact.html">Get in Touch</a></li>
+                <li><a href="#bmr-calculator">BMR Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    
+
+    <section class="event-section">
+        <div class="event-content">
+          <h1>Upcoming Fitness Events</h1>
+          <p>Stay fit and join our exciting fitness events!</p>
+        </div>
+      </section>
+      
+
+    <!-- Events List -->
+    <section class="events-section">
+        <div class="section-content">
+            <h2>Our Featured Events</h2>
+            <div class="event-list">
+                <!-- Event 1 -->
+                <div class="event">
+                    <img src="https://img.freepik.com/free-photo/people-exercising-fitness-gym_53876-7.jpg?ga=GA1.1.1442319038.1726489428&semt=ais_hybrid" alt="Fitness Bootcamp">
+                    <div class="event-details">
+                        <h3>Fitness Bootcamp</h3>
+                        <p>Push your limits and boost your fitness with this intense bootcamp event. Expect a mix of strength, cardio, and endurance exercises in a group setting.</p>
+                        <p><strong>Date:</strong> October 15, 2024</p>
+                        <p><strong>Location:</strong> Central Park, New York</p>
+                        <button class="cta-btn" onclick="registerEvent('Fitness Bootcamp')">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event">
+                    <img src="https://img.freepik.com/free-photo/full-shot-people-doing-yoga-together_23-2151084081.jpg?ga=GA1.1.1442319038.1726489428&semt=ais_hybrid" alt="Yoga & Meditation Retreat">
+                    <div class="event-details">
+                        <h3>Yoga & Meditation Retreat</h3>
+                        <p>Join us for a peaceful day of yoga and meditation in the great outdoors. Refresh your mind and body while deepening your connection to nature.</p>
+                        <p><strong>Date:</strong> November 1, 2024</p>
+                        <p><strong>Location:</strong> Green Hills, California</p>
+                        <button class="cta-btn" onclick="registerEvent('Yoga & Meditation Retreat')">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlu7QBZkjMij5K1m7Pl2YAWwzHlxFV5TjIew&s" alt="HIIT Challenge">
+                    <div class="event-details">
+                        <h3>HIIT Challenge</h3>
+                        <p>Take on our High-Intensity Interval Training (HIIT) challenge! A full-body workout that will test your endurance and help burn maximum calories.</p>
+                        <p><strong>Date:</strong> December 10, 2024</p>
+                        <p><strong>Location:</strong> Downtown Gym, Chicago</p>
+                        <button class="cta-btn" onclick="registerEvent('HIIT Challenge')">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Registration Form -->
+    <section class="event-registration" id="registration">
+        <div class="section-content">
+            <h2>Register for an Event</h2>
+            <p>Sign up to participate in one of our exciting fitness events.</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <select name="event" id="event-select" required>
+                    <option value="">Select Event</option>
+                    <option value="Fitness Bootcamp">Fitness Bootcamp</option>
+                    <option value="Yoga & Meditation Retreat">Yoga & Meditation Retreat</option>
+                    <option value="HIIT Challenge">HIIT Challenge</option>
+                </select>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Event FAQs -->
+    <section class="faq-section">
+        <div class="section-content">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-wrapper">
+                <div class="faq">
+                    <h3>What should I bring to the event?</h3>
+                    <p>Please bring water, a towel, and comfortable workout clothes. For outdoor events, sunscreen and a mat for yoga/meditation are recommended.</p>
+                </div>
+                <div class="faq">
+                    <h3>Can beginners join the events?</h3>
+                    <p>Yes! Our events are open to all fitness levels. Our trainers will offer modifications to accommodate different experience levels.</p>
+                </div>
+                <div class="faq">
+                    <h3>What is the cancellation policy?</h3>
+                    <p>You can cancel your registration up to 48 hours before the event for a full refund. After that, cancellations are non-refundable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Fitness Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Linking the JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Event Registration Function -->
+    <script>
+        function registerEvent(eventName) {
+            const eventSelect = document.getElementById('event-select');
+            eventSelect.value = eventName;
+            document.getElementById('registration').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

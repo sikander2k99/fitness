@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fitness Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/60/a9/61/60a96199afa8469b7c3c46810ed86816.jpg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Programs</a></li>
+                <li><a href="training.html">Workouts</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="contact.html">Get in Touch</a></li>
+                <li><a href="#bmr-calculator">BMR Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section brands-hero">
+        <div class="section-content">
+            <h1>About Us</h1>
+            <p>Committed to empowering you on your fitness journey.</p>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="section mission-vision">
+        <div class="section-content">
+            <h2>Our Mission & Vision</h2>
+            <div class="mission-vision-wrapper">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>At Fitness Website, our mission is to empower individuals to reach their full potential through comprehensive fitness programs, expert guidance, and a supportive community.</p>
+                </div>
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>We envision a world where everyone has access to quality fitness resources, fostering a healthier, happier, and more active society.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="section our-team">
+        <div class="section-content">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://www.wyoxsports.com/cdn/shop/articles/head-harness-feature-image_1100x.png?v=1719575526" alt="Team Member 1">
+                    <h3>shivansh </h3>
+                    <p>Head Trainer</p>
+                    <button class="team-btn" onclick="openModal('team1')">Learn More</button>
+                </div>
+                <div class="team-member">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0Bb2yGB41_4uKKTYBVTeFSsuJMUmAwfm-V1AQEs1jfZpZWhKKTKtZmePGYIVgEWIX3U&usqp=CAU" alt="Team Member 2">
+                    <h3>Divya</h3>
+                    <p>Nutrition Expert</p>
+                    <button class="team-btn" onclick="openModal('team2')">Learn More</button>
+                </div>
+                <div class="team-member">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9MFabcMbRr1VO2CVChptv1HfBam_aXNlpA&s" alt="Team Member 3">
+                    <h3>Proxy</h3>
+                    <p>Yoga Instructor</p>
+                    <button class="team-btn" onclick="openModal('team3')">Learn More</button>
+                </div>
+                <div class="team-member">
+                    <img src="https://bryanuniversity.edu/wp-content/uploads/personal-train-undergrad-cert@2x-scaled.jpg" alt="Team Member 4">
+                    <h3>Aditya kumar</h3>
+                    <p>Personal Trainer</p>
+                    <button class="team-btn" onclick="openModal('team4')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Member Modals -->
+    <div id="team1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('team1')">&times;</span>
+            <h3>John Doe</h3>
+            <p>John is our Head Trainer with over 10 years of experience in strength and conditioning. He specializes in personalized training programs tailored to individual goals.</p>
+        </div>
+    </div>
+
+    <div id="team2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('team2')">&times;</span>
+            <h3>Jane Smith</h3>
+            <p>Jane is our Nutrition Expert, dedicated to helping clients achieve their fitness goals through balanced diets and effective nutrition plans.</p>
+        </div>
+    </div>
+
+    <div id="team3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('team3')">&times;</span>
+            <h3>Mike Johnson</h3>
+            <p>Mike is our Yoga Instructor, focusing on enhancing flexibility, mindfulness, and overall well-being through tailored yoga sessions.</p>
+        </div>
+    </div>
+
+    <div id="team4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('team4')">&times;</span>
+            <h3>Sara Williams</h3>
+            <p>Sara is a Personal Trainer who specializes in high-intensity interval training (HIIT) and personalized workout plans to maximize results.</p>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="section-content">
+            <h2>What Our Members Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <p>"Fitness Website has transformed my life! The trainers are incredibly supportive and the programs are effective."</p>
+                    <h4>- Emily R.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The nutrition plans provided by Jane have helped me achieve my weight loss goals in a healthy way."</p>
+                    <h4>- Michael S.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Mike's yoga sessions are the perfect way to unwind and improve my flexibility after intense training."</p>
+                    <h4>- Laura T.</h4>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevTestimonial()">‹</button>
+            <button class="carousel-control next" onclick="nextTestimonial()">›</button>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="section facilities">
+        <div class="section-content">
+            <h2>Our Facilities</h2>
+            <div class="facilities-grid">
+                <div class="facility">
+                    <img src="https://www.energieindia.com/wp-content/uploads/2023/08/22-AUG-23.jpg" alt="Facility 1">
+                    <h3>State-of-the-Art Gym</h3>
+                    <p>Equipped with the latest fitness machines and free weights to cater to all your training needs.</p>
+                </div>
+                <div class="facility">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUxQChpY5CWERKYf9_w_zEF6c64JlVxM_5iA&s" alt="Facility 2">
+                    <h3>Group Classes</h3>
+                    <p>Join our diverse range of group classes including HIIT, Yoga, Pilates, and more.</p>
+                </div>
+                <div class="facility">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_-bFvvheKNTHpDz9OfSllEmpkSftRhz81Zg&s" alt="Facility 3">
+                    <h3>Personal Training Rooms</h3>
+                    <p>Private spaces for one-on-one training sessions with our certified personal trainers.</p>
+                </div>
+                <div class="facility">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmhMW4KzQhdpNN4NW2MAXfspg3WeuCboiDVw&s" alt="Facility 4">
+                    <h3>Nutrition Bar</h3>
+                    <p>Access to healthy snacks and supplements to support your fitness journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Fitness Website. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Linking the JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
